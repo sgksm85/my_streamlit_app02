@@ -11,7 +11,7 @@ st.markdown(
         background-color: #ffcc00;
     }
     h1 {
-        color: #ff6600;
+        color: #52f6ff;
     }
     </style>
     """,
@@ -19,11 +19,11 @@ st.markdown(
 )
 
 # Markdownの表示
-st.markdown("# カスタマイズされたタイトル")
-st.write("これはカスタマイズされたStreamlitアプリケーションです。")
+st.markdown("# LINE事例集")
+st.write("これはあたしが集めた事例集です。")
 
 # Markdownファイルの読み込み
-with open('/Users/shigikasumi/Dropbox/Projects/Projects/01_REXLI/__LINE_Marketing_Research/Statistics/LINEの企業活用事例.md', 'r', encoding='utf-8') as file:
+with open('../LINEの企業活用事例.md', 'r', encoding='utf-8') as file:
     markdown_content = file.read()
 
 # セクションごとに分割する
