@@ -1,4 +1,5 @@
 import streamlit as st
+import os
 
 # CSSの追加
 st.markdown(
@@ -22,8 +23,11 @@ st.markdown(
 st.markdown("# LINE事例集")
 st.write("これはあたしが集めた事例集です。")
 
+# Markdownファイルの相対パスを指定
+markdown_file_path = os.path.join(os.path.dirname(__file__), '../__LINE_Marketing_Research/Statistics/LINEの企業活用事例.md')
+
 # Markdownファイルの読み込み
-with open('../LINEの企業活用事例.md', 'r', encoding='utf-8') as file:
+with open(markdown_file_path, 'r', encoding='utf-8') as file:
     markdown_content = file.read()
 
 # セクションごとに分割する
